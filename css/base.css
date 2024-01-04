@@ -1,0 +1,219 @@
+
+
+.test{
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.test-title{
+    width: 165px;
+    margin-top: -25px;
+    margin-left: 45px;
+    background: white;
+    padding-left: 8px;
+}
+
+.Coleccionables{
+  width: 230px;
+  margin-top: -25px;
+  margin-left: 45px;
+  background: white;
+  padding-left: 8px;
+}
+
+.Llaveros{
+  width: 190px;
+  margin-top: -25px;
+  margin-left: 45px;
+  background: white;
+  padding-left: 8px;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide, #seleccionado {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img, #seleccionado img {
+    display: block;
+    width: 100%;
+    height: 225px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+.container .card, #seleccionado .card{
+  height: 420px;
+}
+
+.modal img{
+  margin: 0 auto;
+  display: block;
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0px 0px 14px 0px black;
+  border-radius: 10px;
+}
+
+.modal-title{
+  margin-top: 10px;
+}
+
+.modal-content{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.swiper .card, #seleccionado .card{
+  box-shadow: 0px 10px 15px 0px black;
+
+}
+
+.swiper .card:hover, #seleccionado .card:hover{
+  background-color: #e2c5fd;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+
+  @media (max-width:768px) {
+    .card{
+      min-width: 150px !important;
+    }
+    .Llaveros{
+      width: 257px;
+    }
+
+    .modal-title{
+      margin-top: 10px;
+    }
+
+    .container .card, #seleccionado .card{
+      margin-bottom: 40px;
+    }
+
+    .container .Coleccionables{
+      width: 190px;
+      margin-top: -19px;
+    }
+    .test-title{
+      width: 135px;
+      margin-top: -19px;
+    }
+  }
+
+  @media (max-width:1200px) {
+    .card{
+      min-width: 100px !important;
+    }
+  }
+  .card{
+    min-width: 300px;
+  }
+
+
+/* SHOPPING PAGE */
+
+.disclaimer p{
+  font-size: 1.3rem;
+}
+
+.disclaimer{
+  border: 2px solid rgb(23, 26, 61);
+  padding: 15px;
+  width: 95%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.itemContainer img {
+  display: block;
+  
+  object-fit: contain;
+  
+}
+
+.itemContainer{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+
+.item-div > img{
+  padding: 5px;
+  border-right: 1px solid rgb(0, 0, 0);
+  width: 150px
+  
+}
+
+@media (max-width:768px) {
+  .item-div > img{
+    width: 127px !important;
+    
+  }
+}
+
+.totalContainer>button{
+  border: none;
+  background: white;
+}
+
+.totalContainer{
+  padding: 15px;
+  border: 1px solid rgb(23, 26, 61);
+  width: fit-content;
+}
+
+/*Product page*/
+
+#seleccionado{
+  width: 95%;
+  display: block;
+  padding-bottom: inherit;
+  max-width: 1200px;
+}
+
+.inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#seleccionado .card {
+  flex: 0 0 auto;
+  width: 25%;  /* default to 4 items per row */
+  margin: 10px;
+
+}
+
+@media (max-width: 800px) {
+  #seleccionado .card {
+      width: calc(100% / 3);  /* 3 items per row for medium screens */
+  }
+}
+
+@media (max-width: 600px) {
+  #seleccionado .card {
+      width: 43%;  /* 2 items per row for small screens */
+      
+  }
+
+  .swiper-slide img, #seleccionado img {
+    
+    height: 215px;
+    
+  }
+}

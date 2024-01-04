@@ -1,0 +1,70 @@
+{
+    "Llaveros":{
+        "Circulares":{
+            "cant":4, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Diametros de 3cm a 5cm",
+            "precio":1800
+        },
+        "De Corazon":{
+            "cant":8, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Tamaño: 3x4 cm",
+            "precio":1800
+        },
+        "Hexagonales":{
+            "cant":5, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Tamaño: 5x5 cm",
+            "precio":1800
+        },
+        "De Letras":{
+            "cant":7, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Tamaño: 5 cm de alto",
+            "precio":1800
+        },
+        "Rectangulares":{
+            "cant":8, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Tamaños: 3x4 cm, 4x5 cm y 6x5 cm",
+            "precio":1800
+        },
+        "Shakers":{
+            "cant":5, 
+            "info":"Hecho en resina epoxica especial para joyeria, rellenos con objetos moviles, personalizalo con hasta 3 colores a eleccion. Tamaño: 3x5 cm",
+            "precio":1800
+        }
+    },
+    "Coleccionables":{
+        "Marcalibros":{
+            "cant":3, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Tamaño: 2.5x14 cm",
+            "precio":2000
+        },
+        "Pins":{
+            "cant":8, 
+            "info":"Hecho en resina epoxica especial para joyeria, con gancho para colgar donde quieras, personalizalo con hasta 3 colores a eleccion. Tamaño: 2x3 cm",
+            "precio":900
+        }
+    },
+    "Mascotas":{
+        "Tags":{
+            "cant":2, 
+            "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion, el nombre de tu mascota y tu numero de telefono. Tamaño: 2x3 cm, 3x5 cm y 6x4 cm",
+            "precio":1800
+        }
+    },
+    "Accesorios":{
+        "Brazaletes":{
+            "cant":2, 
+            "info":"Hecho con hilo o cuero tejido y resina epoxica especial para joyeria, personalizalo con hasta 2 colores a eleccion. Tamaños ajustables",
+            "precio":1800
+        },
+        "Dijes":{
+            "cant":8, 
+            "info":"Hecho en resina epoxica especial para joyeria, consulte promociones con cadenas de cuero o acero, personalizalo con hasta 3 colores a eleccion",
+            "precio":1800
+        },
+        "Para Celu":{
+            "cant":8, 
+            "info":"Hecho en resina epoxica especial para joyeria, con hilo tejido y cuerda para muñeca, personalizalo con hasta 2 colores a eleccion. Tamaño del dije: 3 cm de diametro",
+            "precio":1800
+        }
+    }
+}
