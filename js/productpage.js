@@ -72,7 +72,7 @@ const displayInfo = (structure, selected) => {
 
       subcategoryDiv.appendChild(misteryCard);
 
-      if(subtitle=='Circulares' || subtitle=='Tags' || subtitle=='Marcalibros' ||subtitle=='Brazaletes'){
+      if(subtitle=='Circulares' || subtitle=='Huesitos' || subtitle=='Marcalibros' ||subtitle=='Brazaletes'){
         count = 2;
       }  
       else{

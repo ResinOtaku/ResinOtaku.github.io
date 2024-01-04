@@ -40,7 +40,7 @@ const displayInfo = (structure) => {
           let info = ""
           let itemTitle = ""
           let itemID = ""
-          if (count===1 && (subcategory === "Circulares" ||subcategory === "Marcalibros" || subcategory === "Brazaletes" || subcategory === "Tags")){
+          if (count===1 && (subcategory === "Circulares" ||subcategory === "Marcalibros" || subcategory === "Brazaletes" || subcategory === "Huesitos")){
             info = "Personalizalo como quieras! Podes elegir forma, tamaño, imagen y hasta 3 colores! Agregá este item al carrito y envialo, coordinaremos con vos por whatsapp."
             itemTitle = `${category} Personalizables`
             itemID = `${category} Personalizables`

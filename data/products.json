@@ -44,8 +44,8 @@
         }
     },
     "Mascotas":{
-        "Tags":{
-            "cant":2, 
+        "Huesitos":{
+            "cant":3, 
             "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion, el nombre de tu mascota y tu numero de telefono. Tamaño: 2x3 cm, 3x5 cm y 6x4 cm",
             "precio":1800
         }
