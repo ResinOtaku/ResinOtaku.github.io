@@ -1,12 +1,12 @@
 {
     "Llaveros":{
         "Circulares":{
-            "cant":4, 
+            "cant":7, 
             "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Diametros de 3cm a 5cm",
             "precio":1800
         },
         "De Corazon":{
-            "cant":8, 
+            "cant":12, 
             "info":"Hecho en resina epoxica especial para joyeria, personalizalo con hasta 3 colores a eleccion. Tamaño: 3x4 cm",
             "precio":1800
         },
