@@ -53,7 +53,7 @@
   }
 
 .container .card, #seleccionado .card{
-  height: 420px;
+  height: fit-content;
 }
 
 .modal img{

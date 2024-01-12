@@ -36,6 +36,8 @@ const displayInfo = (structure, selected) => {
       let title = selected[0]
       let subtitle = selected[1]
   
+      let pageTitle = document.querySelector(".pageTitle");
+      pageTitle.innerText = title;
       let subcategoryDiv = document.querySelector(`.inner`);
 
       let topDiv = document.querySelector(`#seleccionado`);
@@ -63,8 +65,11 @@ const displayInfo = (structure, selected) => {
           </div>
       </div>
           <div class="card-footer p-3 pt-0 border-top-0 bg-transparent">
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" data-bs-info="Personalizalo como quieras! Podes elegir forma, tamaño, imagen y hasta 3 colores! Agregá este item al carrito y envialo, coordinaremos con vos por whatsapp." data-bs-title="${title} Personalizables" data-bs-imgsrc="images/products/${title}/mistery.jpg" data-bs-imgalt="images/products/${title}/mistery.jpg" data-bs-id="${title} Personalizables" data-bs-price="${structure[title][subtitle]["precio"]}">
+              <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal" data-bs-info="Personalizalo como quieras! Podes elegir forma, tamaño, imagen y hasta 3 colores! Agregá este item al carrito y envialo, coordinaremos con vos por whatsapp." data-bs-title="${title} Personalizables" data-bs-imgsrc="images/products/${title}/mistery.jpg" data-bs-imgalt="images/products/${title}/mistery.jpg" data-bs-id="${title} Personalizables" data-bs-price="${structure[title][subtitle]["precio"]}">
               Más Info!
+              </button>
+              <button type="button" onclick="addToCart(event)" class="btn btn-primary mt-1" data-bs-title="${title} Personalizables" data-bs-imgsrc="images/products/${title}/mistery.jpg" data-bs-imgalt="images/products/${title}/mistery.jpg" data-bs-id="${title} Personalizables" data-bs-precio="${structure[title][subtitle]["precio"]}">
+                Agregar al carrito
               </button>
           </div>`
 
@@ -72,7 +77,7 @@ const displayInfo = (structure, selected) => {
 
       subcategoryDiv.appendChild(misteryCard);
 
-      if(subtitle=='Circulares' || subtitle=='Huesitos' || subtitle=='Marcalibros' ||subtitle=='Brazaletes'){
+      if(subtitle=='Circulares' || subtitle=='Huesitos' || subtitle=='Marcalibros' ||subtitle=='Brazaletes'||subtitle=='Holograficos'){
         count = 2;
       }  
       else{
@@ -111,8 +116,11 @@ const displayInfo = (structure, selected) => {
           card_actions.classList = 'card-footer p-3 pt-0 border-top-0 bg-transparent';
           card_actions.innerHTML = 
           `
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productModal" data-bs-info="${innerDict["info"]}" data-bs-title="${title} ${subtitle}" data-bs-imgSrc="${card_img.src}" data-bs-imgAlt="${card_img.alt}" data-bs-ID="${title} ${subtitle} ${count}" data-bs-price="${innerDict["precio"]}">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#productModal" data-bs-info="${innerDict["info"]}" data-bs-title="${title} ${subtitle}" data-bs-imgSrc="${card_img.src}" data-bs-imgAlt="${card_img.alt}" data-bs-ID="${title} ${subtitle} ${count}" data-bs-price="${innerDict["precio"]}">
             Más Info!
+          </button>
+          <button type="button" onclick="addToCart(event)" class="btn btn-primary mt-1" data-bs-info="${innerDict["info"]}" data-bs-title="${title} ${subtitle}" data-bs-imgSrc="${card_img.src}" data-bs-imgAlt="${card_img.alt}" data-bs-ID="${title} ${subtitle} ${count}" data-bs-precio="${innerDict["precio"]}">
+            Agregar al carrito
           </button>
           `
 

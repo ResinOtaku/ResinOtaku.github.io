@@ -45,6 +45,11 @@ const displayInfo = (structure) => {
             itemTitle = `${category} Personalizables`
             itemID = `${category} Personalizables`
           }
+          else if(count===1 && (subcategory === "Holograficos")){
+            info = "Personalizalo como quieras! Podes elegir tamaño, tipo e imagen! Agregá este item al carrito y envialo, coordinaremos con vos por whatsapp."
+            itemTitle = `${category} Personalizables`
+            itemID = `${category} Personalizables`
+          }
           else{
             info = innerDict["info"];
             itemTitle = `${category} ${subcategory}`
@@ -85,8 +90,12 @@ const displayInfo = (structure) => {
           card_actions.classList = 'card-footer p-3 pt-0 border-top-0 bg-transparent';
           card_actions.innerHTML = 
           `
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mainModal" data-bs-info="${info}" data-bs-title="${itemTitle}" data-bs-imgSrc="${card_img.src}" data-bs-imgAlt="${card_img.alt}" data-bs-ID="${itemID}" data-bs-price="${structure[category][subcategory]["precio"]}">
+          <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#mainModal" data-bs-info="${info}" data-bs-title="${itemTitle}" data-bs-imgSrc="${card_img.src}" data-bs-imgAlt="${card_img.alt}" data-bs-ID="${itemID}" data-bs-price="${structure[category][subcategory]["precio"]}">
             Más Info!
+          </button>
+
+          <button type="button" onclick="addToCart(event)" class="btn btn-primary mt-1" data-bs-info="${info}" data-bs-title="${itemTitle}" data-bs-imgSrc="${card_img.src}" data-bs-imgAlt="${card_img.alt}" data-bs-ID="${itemID}" data-bs-precio="${structure[category][subcategory]["precio"]}">
+            Agregar al carrito
           </button>
           `
 

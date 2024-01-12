@@ -66,5 +66,27 @@
             "info":"Hecho en resina epoxica especial para joyeria, con hilo tejido y cuerda para muñeca, personalizalo con hasta 2 colores a eleccion. Tamaño del dije: 3 cm de diametro",
             "precio":1800
         }
+    },
+    "Stickers":{
+        "Holograficos":{
+            "cant":3, 
+            "info":"Sticker con efecto Holografico",
+            "precio":150
+        },
+        "Comunes":{
+            "cant":5, 
+            "info":"Sticker Comun",
+            "precio":100
+        },
+        "Comunes X 10":{
+            "cant":2, 
+            "info":"Stciker Comun X 10 Unidades",
+            "precio":1000
+        },
+        "Holograficos X 5":{
+            "cant":3, 
+            "info":"Sticker con efecto Holografico X 5 Unidades",
+            "precio":700
+        }
     }
 }
